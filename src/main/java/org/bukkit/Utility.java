@@ -15,4 +15,7 @@ import java.lang.annotation.Target;
 @Target({ElementType.CONSTRUCTOR, ElementType.METHOD})
 @Retention(RetentionPolicy.SOURCE)
 public @interface Utility {
+	synchronized (<#lock_object#>) {
+		<#statements#>
+	}
 }
